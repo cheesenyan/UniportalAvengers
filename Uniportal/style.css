@@ -99,3 +99,13 @@ a{color:inherit}
 .term{min-width:0;width:100%}
 .receipt-row{flex-direction:column;gap:2px}
 }
+/* Deliberately slow, in the style of an overburdened campus portal. */
+.loading{background:rgba(0,0,0,.52)}
+.spinner{width:42px;height:42px;margin:0;border:3px solid transparent;border-top-color:#73c44e;border-right-color:#73c44e;animation:spin .8s linear infinite}
+.terms-scroll{height:220px;overflow-y:auto;border:1px solid #c5cbd6;background:#f7f8fb;padding:14px 18px;line-height:1.6}
+.terms-scroll h3{font-size:15px;margin:18px 0 6px}
+.terms-scroll p{font-size:14px;margin:6px 0 18px}
+.terms-end{padding:15px 0;border-top:1px solid #c5cbd6}
+.terms-status{font-size:13px;color:#667186;min-height:2.5em}
+.notice-count{font-size:12px;letter-spacing:.08em;color:#788397;margin-bottom:12px}
+.hidden-submit:disabled{cursor:not-allowed;opacity:.5}
