@@ -2,7 +2,9 @@
 (() => {
   const store = sessionStorage;
   const app = document.getElementById('app');
-  const page = location.pathname.split('/').pop() || 'index.html';
+  // Static hosts may canonicalize page.html to /page. Support both URL forms.
+  const pathPage = location.pathname.split('/').pop() || 'index';
+  const page = pathPage.endsWith('.html') ? pathPage : `${pathPage}.html`;
   const courses = [
     {code:'MATH 206', section:'001-LEC (1201)', name:'Probability and Statistics', days:'MoWe', start:'10:00 am', end:'11:15 am', instructor:'A. Rivera', units:'4', status:'Open', seats:'8/40'},
     {code:'COMP 201', section:'002-LEC (1202)', name:'Introduction to Programming', days:'TuTh', start:'2:00 pm', end:'3:15 pm', instructor:'J. Morgan', units:'4', status:'Open', seats:'12/36'},
