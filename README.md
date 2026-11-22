@@ -21,3 +21,7 @@ The deliberately frustrating mechanisms are long loading screens, repeated sign-
 ## Other student services
 
 The left navigation opens fictional Class Information, Schedule, Enrollment, Academics, Financials, My Information, My Profile, Student Forms, and Full Site pages. Each module asks for demo credentials again. The course catalog can be searched, and Schedule offers list and calendar views; a successfully finalized COMP 201 registration appears in the current session. Other pages show illustrative records rather than connecting to real services or performing real payments, form requests, course drops, or account changes.
+
+## License
+
+Licensed under the Apache License, Version 2.0. See [LICENSE](LICENSE).
